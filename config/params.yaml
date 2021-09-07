@@ -1,0 +1,14 @@
+# 由source 指向 target
+source_lidar_topic: /sick_back/scan
+target_lidar_topic: /sick_front/scan
+
+source_lidar_frame: sub_laser_link
+target_lidar_frame: main_laser_link
+
+icp_score: 5.386
+
+# 在base_link坐标系下主雷达的坐标
+main_to_base_transform_x: 0.352
+main_to_base_transform_y: 0.224
+main_to_base_transform_row: -3.1415926 # 反装为负
+main_to_base_transform_yaw: -0.7854

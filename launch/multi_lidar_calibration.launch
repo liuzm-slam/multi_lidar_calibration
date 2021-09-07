@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="multi_lidar_calibration" type="multi_lidar_calibration_node" name="multi_lidar_calibration_node" output="screen">
+    <rosparam file="$(find multi_lidar_calibration)/config/params.yaml" command="load"/>
+  </node>
+
+  <!--- Run Rviz-->
+      <!--- Run Rviz-->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find multi_lidar_calibration)/rviz/multi_lidar_calibration.rviz" />
+</launch>
